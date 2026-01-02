@@ -2,13 +2,13 @@
   "schemaVersion": 1,
   "id": "mrkatana",
   "version": "${version}",
-  "name": "Meteor autodupe",
-  "description": "Auto itemframe dupe for the best anarchy --)mc.quiltanarchy.xyz",
+  "name": "KatanaDupe",
+  "description": "Auto itemframe dupe for the best Anarchy --> mc.quiltanarchy.xyz",
   "authors": [
     "Katana"
   ],
   "contact": {
-    "repo": "https://github.com/Tealaxdev/"
+    "repo": "https://github.com/Tealaxdev & https://github.com/lyntaxqq"
   },
   "icon": "assets/template/icon.png",
   "environment": "client",
