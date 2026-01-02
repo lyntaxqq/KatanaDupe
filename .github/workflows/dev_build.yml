@@ -36,10 +36,11 @@ jobs:
       - name: Build the Project
         run: ./gradlew build
 
-      - name: Release the Project
+      - name: Publish
         uses: softprops/action-gh-release@v2
         with:
-          tag_name: ${{ env.TAG }}
-          name: KatanaDupe Build ${{ env.TAG }}
+          token: ${{ secrets.GITHUB_TOKEN }}
+          name: v${{ env.VERSION }}
+          tag_name: v${{ env.VERSION }}
           files: |
-           build/libs/*.jar
+            build/libs/*.jar
