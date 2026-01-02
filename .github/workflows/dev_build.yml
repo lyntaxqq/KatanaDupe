@@ -10,13 +10,20 @@ jobs:
     steps:
       - name: Checkout the KatanaDupe
         uses: actions/checkout@v4
+          with:
+              fetch-depth: 0
 
       - name: Set up Java 21
         uses: actions/setup-java@v4
         with:
           java-version: '21'
           distribution: 'temurin'
-
+          
+      - name: Create tag
+        run: |
+         git tag v1.0.${{ github.run_number }}
+         git push origin v1.0.${{ github.run_number }}
+         
       - name: Set up build environment
         run: chmod +x gradlew
 
