@@ -12,8 +12,11 @@ jobs:
           java-version: 17
           distribution: adopt
           
+      - name: Set up build environment
+        run: chmod +x gradlew*
+
       - name: Build
-        run: sudo ./gradlew build
+        run: ./gradlew build
       - name: Release
         uses: marvinpinto/action-automatic-releases@latest
         with:
