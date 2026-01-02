@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "id": "mrkatana",
+  "version": "${version}",
+  "name": "Meteor autodupe",
+  "description": "Auto itemframe dupe for the best anarchy --)mc.quiltanarchy.xyz",
+  "authors": [
+    "Katana"
+  ],
+  "contact": {
+    "repo": "https://github.com/Tealaxdev/"
+  },
+  "icon": "assets/template/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "meteor": [
+      "fr.Mrkatana.katanadupe.Addon"
+    ]
+  },
+  "mixins": [
+    "katana-dupe.mixins.json"
+  ],
+  "custom": {
+    "meteor-client:color": "255,153,25"
+  },
+  "depends": {
+    "java": ">=21",
+    "minecraft": ">=1.21.1",
+    "fabricloader": ">=0.18.0",
+    "meteor-client": "*"
+  }
+}
