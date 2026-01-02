@@ -1,6 +1,5 @@
 <div align="center">
-  <!-- Logo and Title -->
-  <img src="banner.png" alt="logo" width="20%"/>
+  <img loading="lazy" src="banner.png"/>
 <h1>Katana's Dupe</h1>
 <p>An addon to Meteor Client that automate the item frame dupe on anarchy servers
 </p>
