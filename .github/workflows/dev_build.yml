@@ -20,15 +20,8 @@ jobs:
       - name: Set up build environment
         run: chmod +x gradlew
 
-      - name: Build
+      - name: Build the Project
         run: ./gradlew build
 
-      - name: Release
-        uses: marvinpinto/action-automatic-releases@latest
-        with:
-          repo_token: ${{ secrets.GITHUB_TOKEN }}
-          automatic_release_tag: latest
-          prerelease: false
-          title: Dev Build
-          files: |
-            build/libs/*.jar
+      - name: Release the Project
+        uses: softprops/action-gh-release@v2
