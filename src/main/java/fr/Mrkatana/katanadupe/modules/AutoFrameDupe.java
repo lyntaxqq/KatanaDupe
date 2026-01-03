@@ -8,6 +8,7 @@ import meteordevelopment.meteorclient.settings.*;
 import meteordevelopment.meteorclient.systems.modules.Categories;
 import meteordevelopment.meteorclient.systems.modules.Module;
 import meteordevelopment.meteorclient.utils.network.MeteorExecutor;
+import meteordevelopment.meteorclient.utils.player.ChatUtils;
 import meteordevelopment.meteorclient.utils.player.InvUtils;
 import meteordevelopment.meteorclient.utils.render.color.Color;
 import meteordevelopment.meteorclient.utils.render.color.SettingColor;
@@ -165,10 +166,12 @@ public class AutoFrameDupe extends Module {
 
     private final SimpleDateFormat sdf = new SimpleDateFormat("HH:mm:ss");
     private long startTime = 0;
+    private int dupeCount = 0;
 
     @Override
     public void onActivate() {
         startTime = System.currentTimeMillis();
+        dupeCount = 0;
         if (chronometer.get())
             info("Başlangıç: §f" + sdf.format(startTime));
         reachableItemFrames.clear();
@@ -178,11 +181,16 @@ public class AutoFrameDupe extends Module {
 
     @Override
     public void onDeactivate() {
+        ChatUtils.infoPrefix("KatanaDupe", "Dupelenen eşya sayısı: %d", dupeCount);
+        
         if (chronometer.get()) {
             long stopTime = System.currentTimeMillis();
             info("Bitiş: §f" + sdf.format(stopTime));
             info("Süre: §f" + DurationFormatUtils.formatDurationWords(stopTime - startTime, true, true));
         }
+        
+        dupeCount = 0;
+        
         if (mc.player == null || mc.world == null || mc.interactionManager == null) return;
         MeteorExecutor.execute(() -> {
             try {Thread.sleep(100);} catch (InterruptedException e) {e.printStackTrace();}
@@ -339,6 +347,7 @@ public class AutoFrameDupe extends Module {
             for (ItemFrameEntity itemFrame: filledItemFrames) {
                 if (!dontHit.contains(itemFrame)) {
                     mc.interactionManager.attackEntity(mc.player, itemFrame);
+                    dupeCount++;
                     dontHit.add(itemFrame);
                 }
             }
@@ -478,6 +487,7 @@ public class AutoFrameDupe extends Module {
                 if (!dontHit.contains(itemFrame) && dupeItems.get().contains(itemFrame.getHeldItemStack().getItem()) && placements < maxPlacements.get()) {
                     dontHit.add(itemFrame);
                     mc.interactionManager.attackEntity(mc.player, itemFrame);
+                    dupeCount++;
                     if (dupeItems.get().contains(inv.getMainHandStack().getItem())) {
                         interactItemFrame(itemFrame);
                         dontHit.remove(itemFrame);

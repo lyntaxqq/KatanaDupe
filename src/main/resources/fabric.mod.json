@@ -3,9 +3,10 @@
   "id": "mrkatana",
   "version": "${version}",
   "name": "KatanaDupe",
-  "description": "Auto itemframe dupe for the best Anarchy --> mc.quiltanarchy.xyz",
+  "description": "Auto Item Frame Dupe Add-on for Meteor Client",
   "authors": [
-    "Katana"
+    "Katana",
+    "lyntaxqq"
   ],
   "contact": {
     "repo": "https://github.com/Tealaxdev & https://github.com/lyntaxqq"
