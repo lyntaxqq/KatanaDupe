@@ -8,9 +8,6 @@ import net.minecraft.item.Items;
 
 import java.util.List;
 
-import static com.mojang.brigadier.Command.SINGLE_SUCCESS;
-import static meteordevelopment.meteorclient.MeteorClient.mc;
-
 public class ItemFrameDrop extends Command {
     public ItemFrameDrop() {
         super("itemframedrop", "Çevrendeki item frame'lerdeki tüm eşyaları düşürür.");
