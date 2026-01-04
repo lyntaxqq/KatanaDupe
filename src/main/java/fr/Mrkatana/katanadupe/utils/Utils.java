@@ -1,18 +1,19 @@
 package fr.Mrkatana.katanadupe.utils;
 
-import net.minecraft.network.packet.c2s.play.ClientCommandC2SPacket;
-import net.minecraft.network.packet.c2s.play.PlayerMoveC2SPacket;
-import net.minecraft.util.math.BlockPos;
-import net.minecraft.util.math.Vec3d;
-
 import static java.lang.Math.floor;
 import static meteordevelopment.meteorclient.MeteorClient.mc;
+
+import net.minecraft.util.Hand;
+import net.minecraft.util.math.BlockPos;
+import net.minecraft.util.math.Vec3d;
+import net.minecraft.network.packet.c2s.play.PlayerMoveC2SPacket;
+import net.minecraft.network.packet.c2s.play.PlayerInteractEntityC2SPacket;
 
 public class Utils {
     public static void TPX(Vec3d pos, Vec3d startPos) {
 
         if (mc.player.isSneaking()) {
-            mc.player.networkHandler.sendPacket(new ClientCommandC2SPacket(mc.player, ClientCommandC2SPacket.Mode.RELEASE_SHIFT_KEY));
+            mc.player.networkHandler.sendPacket(PlayerInteractEntityC2SPacket.interact(mc.player, mc.player.isSneaking(), Hand.MAIN_HAND));
         }
 
         double distance = startPos.distanceTo(pos);
