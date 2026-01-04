@@ -2,9 +2,16 @@ name: Releases Build
 
 on:
   workflow_dispatch:
+    inputs:
+      version:
+        description: "Release Version for this build"
+        required: true
 
 permissions:
   contents: write
+
+env:
+  VERSION: ${{ github.event.inputs.version }}
 
 jobs:
   build:
