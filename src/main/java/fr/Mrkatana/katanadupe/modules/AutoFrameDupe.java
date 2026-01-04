@@ -42,10 +42,10 @@ public class AutoFrameDupe extends Module {
     public final Setting<List<Item>> dupeItems = sgGeneral.add(new ItemListSetting.Builder()
         .name("items")
         .description("Dupelenecek eşyalar.")
-        .defaultValue(Arrays.asList(Items.DIAMOND, Items.NETHERITE_INGOT, Items.EMERALD, Items.ANCIENT_DEBRIS,
-            Items.SHULKER_SHELL, Items.ELYTRA, Items.DIAMOND_BLOCK, Items.NETHERITE_BLOCK,
-            Items.EMERALD_BLOCK, Items.ENCHANTED_GOLDEN_APPLE, Items.DRAGON_EGG, Items.TOTEM_OF_UNDYING,
-            Items.BEACON, Items.NETHER_STAR, Items.TRIDENT, Items.MACE, Items.END_CRYSTAL))
+        .defaultValue(Arrays.asList(Items.SHULKER_BOX, Items.WHITE_SHULKER_BOX, Items.ORANGE_SHULKER_BOX, Items.MAGENTA_SHULKER_BOX,
+            Items.LIGHT_BLUE_SHULKER_BOX, Items.YELLOW_SHULKER_BOX, Items.LIME_SHULKER_BOX, Items.PINK_SHULKER_BOX,
+            Items.GRAY_SHULKER_BOX, Items.LIGHT_GRAY_SHULKER_BOX, Items.CYAN_SHULKER_BOX, Items.PURPLE_SHULKER_BOX,
+            Items.BLUE_SHULKER_BOX, Items.BROWN_SHULKER_BOX, Items.GREEN_SHULKER_BOX, Items.RED_SHULKER_BOX, Items.BLACK_SHULKER_BOX))
         .build()
     );
 
