@@ -23,7 +23,11 @@ Place item frames on the box, everywhere. Make sure no spaces. Now hold a shulke
 BOOM! That's it. Now wait as you can wait.
 
 # ⭐ The features of KatanaDupe
-- KatanaDupe only supports Item Frame Dupe right now, but new features will be come later. Stay tuned.
+- Offhand Selection (Use Offhand while dupe or not)
+- Speed Selection (Normal / Fast)
+- Min Item Stack Selection (1 to 128)
+- Which Items to Dupe Selection
+- And more...
 
 # ⚠️ Accountability
 ```cpp
