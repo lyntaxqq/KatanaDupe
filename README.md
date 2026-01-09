@@ -11,6 +11,10 @@
 <p align="center">KatanaDupe is a Meteor Client Add-on for making Item Frame dupes super fast. For anarchy servers.</p>
 <p align="center">The project licensed under MIT License. The proejct based on Turkish language but some features may English.</p>
 
+Katanadupe settings screen screenshot:
+<img width="567" height="805" alt="image" src="https://github.com/user-attachments/assets/a671199f-64c9-44da-9a54-d594899bf54d" />
+
+
 # ℹ️ How to use KatanaDupe?
 First of all, download latest JAR from Releases and move it to your mods directory.
 
