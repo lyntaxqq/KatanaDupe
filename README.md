@@ -20,7 +20,7 @@ Now maximize EVERYTHING. And change mode from Normal fo Fast. Then, create a 4x4
 
 Place item frames on the box, everywhere. Make sure no spaces. Now hold a shulker in your hand and activate KatanaDupe.
 
-BOOM! That's it. Now wait as you can wait.
+That's it. Now wait as you can wait.
 
 # ⭐ The features of KatanaDupe
 - Offhand Selection (Use Offhand while dupe or not)
