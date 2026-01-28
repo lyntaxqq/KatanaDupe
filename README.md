@@ -1,3 +1,4 @@
+NOW THİS İS A DEATH PRJECT THİS PROJECT NOT WİLL UPDATE OF 2.2.0 VERSİON AFTER İ THİNK
 <h1 align="center">
   <img loading="lazy" src="banner.png"/>
 </h1>
@@ -38,7 +39,7 @@ That's it. Now wait as you can wait.
 
 
 
-NOW THİS İS A DEATH PRJECT THİS PROJECT NOT WİLL UPDATE OF 2.2.0 VERSİON AFTER İ THİNK
+
 *
 * I am not responsible for you getting banned on servers, this addon only for
 * anarchy servers and if you used it on SMP server or something like that,
