@@ -1,4 +1,4 @@
-NOW THİS İS A DEATH PRJECT THİS PROJECT NOT WİLL UPDATE OF 2.2.0 VERSİON AFTER İ THİNK
+
 <h1 align="center">
   <img loading="lazy" src="banner.png"/>
 </h1>
